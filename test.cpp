@@ -1,10 +1,15 @@
 #include <iostream>
+#include <string>
+
+#define HELLO_STR "Hello"
 
 using namespace std;
 
 int main()
 {
-  cout << "Hello world!\n";
+  const string hello = HELLO_STR " world!";
+
+  cout << hello << endl;
 
   return 0;
 }
