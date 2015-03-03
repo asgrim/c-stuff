@@ -3,17 +3,19 @@
 
 using namespace std;
 
+struct item {
+  double price;
+  int qty;
+};
+
 int main()
 {
-  int v, w;
-  int *ptr = &v;
+  item f;
 
-  *ptr = 15;
-  ptr = &w;
-  *ptr = 10;
+  f.price = 5.99;
+  f.qty = 3;
 
-  cout << "V is " << v << endl;
-  cout << "W is " << w << endl;
+  cout << "The total price is " << (f.qty * f.price) << "\n";
 
   return 0;
 }
