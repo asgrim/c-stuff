@@ -4,8 +4,6 @@ C++ stuff
 To run:
 
 ```bash
-$ g++ -Wall test.cpp
-$ ./a.out
+$ make clean && make
+$ ./test
 ```
-
-@derickr pointed out `-Wall` - enables warnings
